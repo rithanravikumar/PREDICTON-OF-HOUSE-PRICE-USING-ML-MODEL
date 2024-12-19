@@ -13,7 +13,7 @@ model11 = load_model()
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/man-telescope-looking-chart.jpg?raw=true");
+    background-image: url("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/man-telescope-looking-chart%20-%20Copy.jpg?raw=true");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,6 +100,6 @@ def preprocess_inputs():
 # Predict and Display Results
 if st.button("Predict Price"):
     input_data = preprocess_inputs()
-    prediction = model.predict(input_data)
+    prediction = model11.predict(input_data)
     st.subheader("Predicted House Price")
     st.write(f"₹ {prediction[0]:,.2f}")
