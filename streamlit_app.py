@@ -13,7 +13,7 @@ model11 = load_model()
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/man-telescope-looking-chart%20-%20Copy.jpg?raw=true");
+    background-image: url("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/House%20telescope%20design%20canva.png?raw=true");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
