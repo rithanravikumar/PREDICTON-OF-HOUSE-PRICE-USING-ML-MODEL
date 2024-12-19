@@ -8,7 +8,7 @@ def load_model():
     with open("houseprice.pkl", "rb") as f:
         return pickle.load(f)
 
-model = load_model()
+model11 = load_model()
 
 # Streamlit App Title
 st.title("Predicting House Prices Based on Past Sales Data")
