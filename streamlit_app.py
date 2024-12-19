@@ -24,7 +24,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Streamlit App Title
 st.title("Predicting House Prices Based on Past Sales Data")
-st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
+#st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
 st.write("Enter the required details below to predict the house price.")
 
 # Input Fields
