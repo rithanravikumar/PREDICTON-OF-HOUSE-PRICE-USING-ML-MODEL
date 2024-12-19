@@ -5,7 +5,7 @@ from datetime import date
 
 # Load the trained model
 def load_model():
-    with open("chennai_sales.pkl", "rb") as f:
+    with open("houseprice.pkl", "rb") as f:
         return pickle.load(f)
 
 model = load_model()
