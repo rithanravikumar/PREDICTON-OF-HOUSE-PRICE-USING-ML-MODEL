@@ -10,12 +10,18 @@ def load_model():
 
 model11 = load_model()
 
-background_image_url = "https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/house%20price%20prediction%20bg%20image.jpg?raw=true"
+page_bg_img = '''
+<style>
+.stApp {
+    background-image: url("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/house%20price%20prediction%20bg%20image.jpg?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
-st.markdown(
-    f'<style>body{{background-image: url("{background_image_url}"); background-size: cover; height: 100vh;}}</style>',
-    unsafe_allow_html=True
-)
 # Streamlit App Title
 st.title("Predicting House Prices Based on Past Sales Data")
 st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
