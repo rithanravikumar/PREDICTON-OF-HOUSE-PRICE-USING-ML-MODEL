@@ -15,6 +15,13 @@ st.title("Predicting House Prices Based on Past Sales Data")
 st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
 st.write("Enter the required details below to predict the house price.")
 
+background_image_url = "https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/house%20price%20prediction%20bg%20image.jpg?raw=true"
+
+st.markdown(
+    f'<style>body{{background-image: url("{background_image_url}"); background-size: cover; height: 100vh;}}</style>',
+    unsafe_allow_html=True
+)
+
 # Input Fields
 selected_AREA = st.selectbox("Area",["Karapakkam", "Anna Nagar", "Adyar","Velachery","Chrompet","KK Nagar","T Nagar"])
 area_mapping={"Karapakkam":4.0, "Anna Nagar":1.0, "Adyar":0.0,"Velachery":6.0,"Chrompet":2.0,"KK Nagar":3.0,"T Nagar":5.0}
