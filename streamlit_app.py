@@ -10,17 +10,16 @@ def load_model():
 
 model11 = load_model()
 
-# Streamlit App Title
-st.title("Predicting House Prices Based on Past Sales Data")
-st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
-st.write("Enter the required details below to predict the house price.")
-
 background_image_url = "https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/house%20price%20prediction%20bg%20image.jpg?raw=true"
 
 st.markdown(
     f'<style>body{{background-image: url("{background_image_url}"); background-size: cover; height: 100vh;}}</style>',
     unsafe_allow_html=True
 )
+# Streamlit App Title
+st.title("Predicting House Prices Based on Past Sales Data")
+st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
+st.write("Enter the required details below to predict the house price.")
 
 # Input Fields
 selected_AREA = st.selectbox("Area",["Karapakkam", "Anna Nagar", "Adyar","Velachery","Chrompet","KK Nagar","T Nagar"])
