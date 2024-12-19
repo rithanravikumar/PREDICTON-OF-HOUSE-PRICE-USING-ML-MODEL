@@ -12,7 +12,7 @@ model11 = load_model()
 
 # Streamlit App Title
 st.title("Predicting House Prices Based on Past Sales Data")
-st.image("https://raw.githubusercontent.com/Hariprasath1911/sale-app/main/1.png")
+st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/b4b9aac0fd4a6efd448db56874b15326.jpg")
 st.write("Enter the required details below to predict the house price.")
 
 # Input Fields
