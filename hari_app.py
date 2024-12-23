@@ -1,12 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pickle
-from datetime import date
 import xgboost as xgb
+import pickle
 
-model = xgb.Booster()
-model.load_model('housepricepred.pkl')
-
+# Load Model
 def load_model():
     print("Loading XGBoost model...")
     model = xgb.Booster()
@@ -89,7 +86,8 @@ def preprocess_inputs():
         "week_date_sale": week_date_sale,
         "build_age": build_age,
     }
-    return pd.DataFrame([data])
+     return xgb.DMatrix(pd.DataFrame([data]))
+
 
 # Predict and Display Results
 if st.button("Predict Price"):
