@@ -3,6 +3,12 @@ import pandas as pd
 import pickle
 from datetime import date
 
+
+import os
+if not os.path.exists('path_to_model_file.pkl'):
+    print("Model file not found!")
+
+
 # Load the trained model
 def load_model():
     with open("housepricepred.pkl", "rb") as f:
