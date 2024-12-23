@@ -18,6 +18,11 @@ page_bg_img = '''
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.st-title {
+    color: brown;
+}
+
 .st-selectbox, .st-number_input, .st-slider, .st-text_input, .st-date_input, .st-radio, .st-multiselect {
     background-color: black !important;
     color: white;
