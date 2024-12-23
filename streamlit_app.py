@@ -27,7 +27,6 @@ st.title("Hello there!! Let's predict House prices using historical sales data."
 #st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
 st.write("Wanna predict house prices based on your needs?")
 st.write("Just enter the details below.")
-st.markdown("Just checking font")
 
 # Input Fields
 selected_AREA = st.selectbox("Area",["Karapakkam", "Anna Nagar", "Adyar","Velachery","Chrompet","KK Nagar","T Nagar"])
