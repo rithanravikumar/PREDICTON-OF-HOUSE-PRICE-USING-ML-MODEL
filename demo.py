@@ -19,10 +19,6 @@ page_bg_img = '''
     background-attachment: fixed;
 }
 
-.st-title {
-    color: brown;
-}
-
 .st-selectbox, .st-number_input, .st-slider, .st-text_input, .st-date_input, .st-radio, .st-multiselect {
     background-color: violet !important;
     color: white;
@@ -44,8 +40,13 @@ page_bg_img = '''
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Streamlit App Title
-st.title("Hello there!! Let's predict House prices using historical sales data.")
+# Streamlit App Title with Custom Brown Color
+st.markdown(
+    """
+    <h1 style="color:brown;">Hello there!! Let's predict House prices using historical sales data.</h1>
+    """, unsafe_allow_html=True
+)
+
 st.write("Wanna predict house prices based on your needs?")
 st.write("Just enter the details below.")
 
