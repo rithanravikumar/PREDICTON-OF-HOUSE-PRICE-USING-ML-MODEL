@@ -5,10 +5,10 @@ from datetime import date
 
 # Load the trained model
 def load_model():
-    with open("houseprice.pkl", "rb") as f:
+    with open("housepricepred.pkl", "rb") as f:
         return pickle.load(f)
 
-model11 = load_model()
+model4 = load_model()
 
 page_bg_img = '''
 <style>
@@ -23,9 +23,9 @@ page_bg_img = '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Streamlit App Title
-st.title("Predicting House Prices Based on Past Sales Data")
+st.title("Hello there!! Let's predict House prices using historical sales data.")
 #st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
-st.write("Enter the required details below to predict the house price.")
+st.write("Wanna predict house prices? Simply enter the details below.")
 
 # Input Fields
 selected_AREA = st.selectbox("Area",["Karapakkam", "Anna Nagar", "Adyar","Velachery","Chrompet","KK Nagar","T Nagar"])
@@ -98,8 +98,8 @@ def preprocess_inputs():
     return pd.DataFrame([data])
 
 # Predict and Display Results
-if st.button("Predict Price"):
+if st.button("Predict House Price"):
     input_data = preprocess_inputs()
-    prediction = model11.predict(input_data)
-    st.subheader("Predicted House Price")
+    prediction = model4.predict(input_data)
+    st.subheader("Here you go,Predicted House Price")
     st.write(f"₹ {prediction[0]:,.2f}")
