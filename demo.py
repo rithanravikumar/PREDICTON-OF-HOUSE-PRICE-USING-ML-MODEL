@@ -20,14 +20,14 @@ page_bg_img = '''
 }
 .st-selectbox, .st-number_input, .st-slider, .st-text_input, .st-date_input, .st-radio, .st-multiselect {
     background-color: black !important;
-    color: red;
+    color: white;
     padding: 10px;
     border-radius: 5px;
 }
 
 .stSelectbox>label, .stNumberInput>label, .stSlider>label, .stTextInput>label, .stDateInput>label, .stRadio>label, .stMultiselect>label {
     background-color: black;
-    color: red;
+    color: white;
     padding: 10px;
     border-radius: 5px;
 }
