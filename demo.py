@@ -43,7 +43,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 # Streamlit App Title with Custom Brown Color
 st.markdown(
     """
-    <h1 style="color:black;">Hello there!! Let's predict House prices using historical sales data.</h1>
+    <h1 style="color:red;">Hello there!! Let's predict House prices using historical sales data.</h1>
     """, unsafe_allow_html=True
 )
 
