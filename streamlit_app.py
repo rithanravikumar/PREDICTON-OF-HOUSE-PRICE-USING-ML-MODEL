@@ -110,8 +110,20 @@ st.markdown(
     unsafe_allow_html=True,
 )
 # Predict and Display Results
-if st.button("Predict House Price"):
+if st.button("Predict Price"):
     input_data = preprocess_inputs()
     prediction = model4.predict(input_data)
-    st.subheader("Here you go, Predicted House Price")
-    st.write(f"₹ {prediction[0]:,.2f}")
+    st.subheader("Predicted House Price")
+    
+    # Format the predicted price
+    formatted_prediction = f"₹ {prediction[0]:,.2f}"
+    
+    # Display with dark green background
+    st.markdown(
+        f"""
+        <div style="background-color: #228B22; color: #FFFFFF; padding: 15px; border-radius: 5px; text-align: center; font-size: 20px;">
+            {formatted_prediction}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
