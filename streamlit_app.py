@@ -25,7 +25,8 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 # Streamlit App Title
 st.title("Hello there!! Let's predict House prices using historical sales data.")
 #st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
-st.write("Wanna predict house prices? Simply enter the details below.")
+st.header("Wanna predict house prices based on your needs?")
+st.header("Just enter the details below.")
 
 # Input Fields
 selected_AREA = st.selectbox("Area",["Karapakkam", "Anna Nagar", "Adyar","Velachery","Chrompet","KK Nagar","T Nagar"])
