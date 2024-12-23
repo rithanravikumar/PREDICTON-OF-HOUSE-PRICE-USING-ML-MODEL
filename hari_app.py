@@ -3,16 +3,22 @@ import pandas as pd
 import pickle
 from datetime import date
 
-
+https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl
 import os
-if not os.path.exists('path_to_model_file.pkl'):
+if not os.path.exists('https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl'):
     print("Model file not found!")
 
 
 # Load the trained model
 def load_model():
-    with open("housepricepred.pkl", "rb") as f:
+    with open("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl", "rb") as f:
         return pickle.load(f)
+def load_model():
+    print("Loading model...")
+    with open('path_to_model_file.pkl', 'rb') as f:
+        model = pickle.load(f)
+    print("Model loaded successfully.")
+    return model
 
 model4 = load_model()
 
