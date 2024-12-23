@@ -19,15 +19,15 @@ page_bg_img = '''
     background-attachment: fixed;
 }
 .st-selectbox, .st-number_input, .st-slider, .st-text_input, .st-date_input, .st-radio, .st-multiselect {
-    background-color: white !important;
-    color: black;
+    background-color: black !important;
+    color: red;
     padding: 10px;
     border-radius: 5px;
 }
 
 .stSelectbox>label, .stNumberInput>label, .stSlider>label, .stTextInput>label, .stDateInput>label, .stRadio>label, .stMultiselect>label {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: red;
     padding: 10px;
     border-radius: 5px;
 }
