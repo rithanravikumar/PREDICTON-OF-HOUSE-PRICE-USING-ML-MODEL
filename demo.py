@@ -20,30 +20,28 @@ page_bg_img = '''
 }
 
 .st-selectbox, .st-number_input, .st-slider, .st-text_input, .st-date_input, .st-radio, .st-multiselect {
-    background-color: black !important;
+    background-color: violet !important;
     color: white;
     padding: 10px;
     border-radius: 5px;
 }
 
 .stSelectbox>label, .stNumberInput>label, .stSlider>label, .stTextInput>label, .stDateInput>label, .stRadio>label, .stMultiselect>label {
-    background-color: black;
+    background-color: violet;
     color: white;
     padding: 10px;
     border-radius: 5px;
-}
-
-.stMarkdown, .stTitle {
-    color: white;
 }
 </style>
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Streamlit App Title with Custom Brown Color
+# Streamlit App Title with Custom White Background and Brown Text
 st.markdown(
     """
-    <h1 style="color:red;">Hello there!! Let's predict House prices using historical sales data.</h1>
+    <h1 style="background-color:white; color:brown; padding: 20px; text-align: center; border-radius: 5px;">
+        Hello there!! Let's predict House prices using historical sales data.
+    </h1>
     """, unsafe_allow_html=True
 )
 
