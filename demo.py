@@ -18,8 +18,21 @@ page_bg_img = '''
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.selectbox, .st-selectbox {
+.st-selectbox, .st-number_input, .st-slider, .st-text_input, .st-date_input, .st-radio, .st-multiselect {
+    background-color: violet !important;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.stSelectbox>label, .stNumberInput>label, .stSlider>label, .stTextInput>label, .stDateInput>label, .stRadio>label, .stMultiselect>label {
     background-color: violet;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.stMarkdown, .stTitle {
     color: white;
 }
 </style>
@@ -28,7 +41,6 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Streamlit App Title
 st.title("Hello there!! Let's predict House prices using historical sales data.")
-#st.image("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/blob/main/istockphoto-474917902-612x612.jpg?raw=true")
 st.write("Wanna predict house prices based on your needs?")
 st.write("Just enter the details below.")
 
