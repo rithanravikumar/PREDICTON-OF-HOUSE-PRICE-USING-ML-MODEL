@@ -96,13 +96,7 @@ def preprocess_inputs():
         "build_age": build_age,
     }
     return pd.DataFrame([data])
-
-# Predict and Display Results
-if st.button("Predict House Price"):
-    input_data = preprocess_inputs()
-    prediction = model4.predict(input_data)
-    st.subheader("Here you go, Predicted House Price")
-    text = "This is a text with a colored background."
+text = "This is a text with a colored background."
 color = "#FFFFFF"  # Text color
 background = "#FF5733"  # Background color
 
@@ -115,4 +109,9 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+# Predict and Display Results
+if st.button("Predict House Price"):
+    input_data = preprocess_inputs()
+    prediction = model4.predict(input_data)
+    st.subheader("Here you go, Predicted House Price")
     st.write(f"₹ {prediction[0]:,.2f}")
