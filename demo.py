@@ -20,14 +20,14 @@ page_bg_img = '''
 }
 
 .st-selectbox, .st-number_input, .st-slider, .st-text_input, .st-date_input, .st-radio, .st-multiselect {
-    background-color: violet !important;
+    background-color: black !important;
     color: white;
     padding: 10px;
     border-radius: 5px;
 }
 
 .stSelectbox>label, .stNumberInput>label, .stSlider>label, .stTextInput>label, .stDateInput>label, .stRadio>label, .stMultiselect>label {
-    background-color: violet;
+    background-color: black;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -44,7 +44,8 @@ st.markdown(
     </h1>
     """, unsafe_allow_html=True
 )
-
+st.write("")
+st.write("")
 st.write("Wanna predict house prices based on your needs?")
 st.write("Just enter the details below.")
 
