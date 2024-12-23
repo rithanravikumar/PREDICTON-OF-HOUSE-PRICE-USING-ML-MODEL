@@ -101,5 +101,18 @@ def preprocess_inputs():
 if st.button("Predict House Price"):
     input_data = preprocess_inputs()
     prediction = model4.predict(input_data)
-    st.subheader("Here you go,Predicted House Price")
+    st.subheader("Here you go, Predicted House Price")
+    text = "This is a text with a colored background."
+color = "#FFFFFF"  # Text color
+background = "#FF5733"  # Background color
+
+# Display styled text
+st.markdown(
+    f"""
+    <div style="background-color: {background}; color: {color}; padding: 10px; border-radius: 5px;">
+        {text}
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
     st.write(f"₹ {prediction[0]:,.2f}")
