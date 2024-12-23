@@ -109,7 +109,7 @@ if st.button("Predict Price"):
     # Display with bold text and dark green background
     st.markdown(
         f"""
-        <div style="background-color: #228B22; color: #FFFFFF; padding: 15px; border-radius: 5px; text-align: center; font-size: 20px;">
+        <div style="background-color: #228B22; color: #FFFFFF; padding: 15px; border-radius: 5px; text-align: center; font-size: 40px;">
             <strong>{formatted_prediction}</strong>
         </div>
         """,
