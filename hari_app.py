@@ -2,27 +2,15 @@ import streamlit as st
 import pandas as pd
 import pickle
 from datetime import date
-
 import xgboost as xgb
 
-model4 = xgb.Booster()
+model = xgb.Booster()
 model.load_model('housepricepred.pkl')
 
-
-https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl
-import os
-if not os.path.exists('https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl'):
-    print("Model file not found!")
-
-
-# Load the trained model
 def load_model():
-    with open("https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl", "rb") as f:
-        return pickle.load(f)
-def load_model():
-    print("Loading model...")
-    with open('path_to_model_file.pkl', 'rb') as f:
-        model = pickle.load(f)
+    print("Loading XGBoost model...")
+    model = xgb.Booster()
+    model.load_model('housepricepred.pkl')
     print("Model loaded successfully.")
     return model
 
