@@ -86,7 +86,7 @@ def preprocess_inputs():
         "week_date_sale": week_date_sale,
         "build_age": build_age,
     }
-     return xgb.DMatrix(pd.DataFrame([data]))
+    return xgb.DMatrix(pd.DataFrame([data]))
 
 
 # Predict and Display Results
