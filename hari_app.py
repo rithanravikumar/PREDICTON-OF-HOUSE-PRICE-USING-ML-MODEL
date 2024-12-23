@@ -3,6 +3,12 @@ import pandas as pd
 import pickle
 from datetime import date
 
+import xgboost as xgb
+
+model4 = xgb.Booster()
+model.load_model('housepricepred.pkl')
+
+
 https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl
 import os
 if not os.path.exists('https://github.com/rithanravikumar/PREDICTON-OF-HOUSE-PRICE-USING-ML-MODEL/raw/refs/heads/main/housepricepred.pkl'):
