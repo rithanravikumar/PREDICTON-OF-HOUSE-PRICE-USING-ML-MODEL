@@ -39,8 +39,8 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 # Streamlit App Title with Custom White Background and Brown Text
 st.markdown(
     """
-    <h1 style="background-color:white; color:brown; padding: 20px; text-align: center; border-radius: 5px;">
-        Hello there!! Let's predict House prices using historical sales data.
+    <h1 style="background-color:white; color:black; padding: 20px; text-align: center; border-radius: 5px;">
+        Hello!! Let's predict House prices using historical sales data.
     </h1>
     """, unsafe_allow_html=True
 )
